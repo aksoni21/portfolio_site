@@ -1,0 +1,276 @@
+.an {
+  margin-top: 75px;
+}
+.p {
+  /* display: flex; */
+  width: 100vw;
+  align-items: left;
+  justify-content: left;
+  /* background-color: khaki; */
+}
+.bg-myRed {
+  background-color: black;
+  font-size: 24px;
+  justify-items: right;
+  justify-content: right;
+  align-items: right;
+}
+.n-items {
+  justify-items: right;
+  align-items: right;
+  justify-content: right;
+  padding: 10px;
+}
+.n-burger-items {
+  background-color: black;
+}
+.an {
+  margin-top: 75px;
+}
+.l {
+  background-color: firebrick;
+  font-size: 30px;
+  border-radius: 30%;
+  margin: 10px;
+  padding: 6px 8px 8px 8px;
+}
+.b {
+  max-width: 500px;
+}
+.b-bg {
+  width: 20px;
+  height: 100%;
+  background-color: indianred;
+  position: absolute;
+}
+.b-wrapper {
+  padding: 50px;
+  /* display: flex; */
+}
+.b-dex {
+  box-shadow: 1px 3px 6px -2px indianred;
+  padding: 32px;
+  margin: 48px 0;
+  line-height: 2;
+  cursor: pointer;
+  position: relative;
+}
+.b-nft {
+  box-shadow: 1px 3px 6px -2px indianred;
+  padding: 32px;
+  margin: 48px 0;
+  line-height: 2;
+  cursor: pointer;
+  position: relative;
+}
+.b-dex:hover {
+  box-shadow: 1px 6px 16px -1px firebrick;
+  transition: all 1000ms;
+  /* background:red; */
+}
+.b-nft:hover {
+  box-shadow: 1px 6px 16px -1px firebrick;
+  transition: all 1000ms;
+  /* background:red; */
+}
+/* Work History */
+.w-bg {
+  width: 20px;
+  height: 100%;
+  background-color: green;
+  position: absolute;
+}
+.w-wrapper {
+  padding: 50px;
+  /* display: flex; */
+}
+.w-resume {
+  font-size: 10px;
+  /* display: flex; */
+}
+
+.c-bg {
+  width: 20px;
+  height: 100%;
+  background-color: blueviolet;
+  position: absolute;
+}
+
+button {
+  border: none;
+  padding: 15px;
+  background-color: indigo;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 12px;
+}
+/* .typical{
+  justify-content: center;
+  width: 100vw;
+} */
+/* .p-pic {
+  background-color: lawngreen;
+}
+.p-pict {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  box-shadow: 0 2px 0px 0px var(--white);
+  min-height: 280px;
+  min-width: 280px;
+
+  background-image: url("./assets/Home/profilepic.png");
+  background-size: cover;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+.p-primary-text {
+  /* display: flex; */
+  width: 50vw;
+}
+
+@media (min-width: 500px) {
+  .b-wrapper {
+    font-size: 35px;
+    width: 100vw;
+  }
+  .w-wrapper {
+    font-size: 35px;
+    width: 100vw;
+  }
+  .c-title {
+    font-size: 600px;
+  }
+}
+@media (min-width: 500px) {
+  .c-title {
+    font-size: 600px;
+  }
+}
+/*.p-role-tagline{
+  display: flex;
+  width:100vw;
+} */
+
+/* .btn-highlighted-btn{
+  display: flex;
+  width:100vw;
+  text-emphasis-color:var(--sea-green-extra-dark);
+} */
+/* .profile-parent{
+  display:flex;
+
+} */
+
+/* .profile-parent{
+   width:100vw;
+   display: flex;
+ }*/
+
+/* .p-picture {
+  display: flex;
+  background-size: cover;
+  border-radius: 55%;
+  background-position: center;
+  background-image: url("./assets/Home/profilepic.png");
+  height: 380px;
+  width: 380px;
+  
+} 
+@media (max-width:400px){
+  .p-picture {
+    display: flex;
+    background-size: cover;
+    border-radius: 55%;
+    background-position: center;
+    background-image: url("./assets/Home/profilepic.png");
+    height: 180px;
+    width: 180px;
+    
+  } 
+} */
+
+.header {
+  position: fixed;
+  height: 85px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: 0.3s ease-in;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1240px;
+  margin: auto;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.header .nav-menu {
+  display: flex;
+}
+
+.header .nav-item {
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.header .nav-item a:hover {
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--secondary-color);
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 840px) {
+  .header {
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .header .navbar {
+    max-width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 80px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 90vh;
+    z-index: 999;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    color:white;
+    margin: 1.5rem 0;
+  }
+
+  .header .navbar img {
+    width: 150px;
+  }
+}
