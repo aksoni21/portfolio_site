@@ -1,0 +1,634 @@
+.App {
+    text-align: center;
+    height: 100vh;
+    background-color: black;
+  }
+  
+  h1 {
+    position: relative;
+    color: white;
+  }
+  
+  .bgimg-container::before {
+    /* content:'' needs to be set in "::" psuedo elements else it wont show up */
+    content: "";
+    background-image: url("https://cdn.motor1.com/images/mgl/13Lvp/s1/2022-ford-f-150-lightning-side-view.webp");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    /* aspect-ratio: 16/9; */
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+  
+  .bgimg-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+    /* box-shadow: 0px 0px 15px 25px blueviolet; */
+  }
+  
+  .typical {
+    width: 600px;
+  }
+  
+  .typ-header{
+    font-size: 60px;
+  }
+  .typ {
+    font-size: 24px;
+  }
+  
+  .encanto {
+    /* box-shadow: 0px 0px 15px 25px orangered; */
+    color: white;
+    max-width: 600px;
+    margin-right: 100px;
+    /* background-color: darkslategrey; */
+    position: relative;
+  }
+  
+  .mainbuttons{
+    margin-left: 5px;
+    color: white;
+    background-color:lightcoral;
+    border-radius: 7px;
+    width: 150px;
+    height:30px;
+  }
+  
+  .nftitem {
+    border-radius: 5%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh;
+    width: 100vw;*/
+    max-height: 1000px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(10%,-50%);  */
+    box-shadow: 0px 0px 15px -2px gray;
+  }
+  
+  .mustang {
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    max-height: 50rem;
+    max-width: 30rem;
+    /* aspect-ratio: 16/9; */
+    /* overflow: hidden; */
+    /* display: block;
+    position: relative;
+    top:50%;
+    left:50%;  */
+    /* transform: translate(10%,-60%); */
+  }
+  .pagetitlesection {
+    height: 200px;
+    background-color: gray;
+  }
+  .pagetitlesection h2 {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%, -30%);
+    font-size: 35px;
+  }
+  .auction {
+    text-align: center;
+    background-color: gray;
+    height: 100vw;
+  }
+  
+  .mynfts {
+    text-align: center;
+    background-color: gray;
+    height: 100vw;
+  }
+  .gen {
+    text-align: center;
+    background-color: gray;
+    height: 100vw;
+  }
+  .dash {
+    text-align: center;
+    background-color: gray;
+    height: 100vh;
+  }
+  
+  .App-no-items {
+    text-align: center;
+    background-color: gray;
+    height: 100vw;
+  }
+  
+  .navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    /* background-color: blue; */
+    color: white;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  }
+  .logo {
+    background-color:orangered;
+    font-size: 30px;
+    border-radius: 15px;
+    margin-left: 10px;
+    padding: 5px;
+    font-style: italic;
+  }
+  .logolink {
+    display: block;
+    text-decoration: none;
+    color:white;
+  }
+  /* .brand-title {
+    font-size: 1.5rem;
+    /* margin: 0.5rem; 
+    display:flex;
+  } */
+  
+  .navbar-links {
+    height: 100%;
+  }
+  
+  .navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    list-style: none;
+  }
+  
+  .navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .navbar-links li:hover {
+    background-color: #555;
+  }
+  
+  .toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  /* --NFT cards styling */
+  .cards {
+    display: flex;
+    background-color: #555;
+  }
+  
+  .card {
+    margin: 10px;
+    display: block;
+    width: 400px;
+    height: 300px;
+    box-shadow: 0px 0px 15px -2px black;
+  }
+  
+  .nftimg {
+    object-fit: cover;
+    max-width: 400px;
+    max-height: 300px;
+    /* aspect-ratio:16/12; */
+  }
+  
+  .card:hover {
+    transition: 350ms transform ease-in-out;
+    transform: scale(1.15);
+    border-radius: 15%;
+  }
+  .buy_button {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 400px;
+    font-weight: bold;
+    color: white;
+    background-color: cornflowerblue;
+  }
+  /* --end cards styling */
+  
+  /* CreateTimeline styling */
+  .createitem {
+    /* text-align: center; */
+    margin-top: 0px;
+    padding-top: 10px;
+    background-color: gray;
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .tl {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 500px;
+    margin: 0 auto;
+    border-left: 3px solid silver;
+    padding-left: 25px;
+  }
+  .tl h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    margin: 0;
+    color: blueviolet;
+    border-bottom: 1px solid turquoise;
+  }
+  
+  .event {
+    /* box-shadow: 0px 3px 6px -2px darkgreen; */
+    padding: 32px;
+    margin: 48px 0;
+    line-height: 2;
+    cursor: pointer;
+    position: relative;
+  }
+  .event::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    border: 2px solid blanchedalmond;
+    position: absolute;
+    left: -39px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-55%);
+    background-color: white;
+    transition: all 300ms;
+  }
+  .event:hover {
+    /* box-shadow: 1px 6px 16px -1px indianred; */
+    transition: all 1000ms;
+    /* background:red; */
+  }
+  .event:hover::before {
+    background: red;
+  }
+  .event-date {
+    position: absolute;
+    left: -150px;
+    top: 40%;
+    transform: translateY(-0%);
+    font-weight: bold;
+  }
+  
+  /* --end CreateTimeline styling */
+  
+
+  /* ----------------------- */
+  @media (min-width: 2851px) {
+    .App {
+      text-align: center;
+      height: 100vh;
+      background-color: black;
+    }
+    
+    h1 {
+      position: relative;
+      color: white;
+    }
+    
+    .bgimg-container::before {
+      /* content:'' needs to be set in "::" psuedo elements else it wont show up */
+      content: "";
+      background-image: url("https://cdn.motor1.com/images/mgl/13Lvp/s1/2022-ford-f-150-lightning-side-view.webp");
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      /* aspect-ratio: 16/9; */
+      opacity: 0.5;
+      filter: blur(5px);
+    }
+    
+    .bgimg-container {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      width: 100vw;
+      /* box-shadow: 0px 0px 15px 25px blueviolet; */
+    }
+    
+    .typical {
+      width: 600px;
+    }
+    
+    .typ-header{
+      font-size: 60px;
+    }
+    .typ {
+      font-size: 30px;
+      position: relative;
+    }
+    
+    .encanto {
+      /* box-shadow: 0px 0px 15px 25px orangered; */
+      color: white;
+      max-width: 600px;
+      margin-right: 100px;
+      /* background-color: darkslategrey; */
+    }
+    
+    .media850-mainbuttons{
+      display: none;
+      /* margin-left: 5px;
+      color: white;
+      background-color:lightcoral;
+      border-radius: 7px;
+      width: 150px;
+      height:30px; */
+    }
+    .media851-mainbuttons{
+      margin-left: 5px;
+      color: white;
+      border-radius: 7px;
+      /* width: 150px;
+      height:30px; */
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .homepage-nftitem {
+      border-radius: 5%;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      /* height: 100vh;
+      width: 100vw;*/
+      max-height: 1000px;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      /* top: 50%;
+      left: 50%; */
+      /* transform: translate(10%,-50%);  */
+      box-shadow: 0px 0px 15px -2px gray;
+    }
+    
+    .mustang {
+      border-top-left-radius: 5%;
+      border-top-right-radius: 5%;
+      max-height: 50rem;
+      max-width: 30rem;
+      /* aspect-ratio: 16/9; */
+      /* overflow: hidden; */
+      /* display: block;
+      position: relative;
+      top:50%;
+      left:50%;  */
+      /* transform: translate(10%,-60%); */
+    }
+    .pagetitlesection {
+      height: 200px;
+      background-color: gray;
+    }
+    .pagetitlesection h2 {
+      display: block;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-25%, -30%);
+      font-size: 35px;
+    }
+    .auction {
+      text-align: center;
+      background-color: gray;
+      height: 100vw;
+    }
+    
+    .mynfts {
+      text-align: center;
+      background-color: gray;
+      height: 100vw;
+    }
+    .gen {
+      text-align: center;
+      background-color: gray;
+      height: 100vw;
+    }
+    .dash {
+      text-align: center;
+      background-color: gray;
+      height: 100vh;
+    }
+    
+    .App-no-items {
+      text-align: center;
+      background-color: gray;
+      height: 100vw;
+    }
+    
+    .navbar {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      /* background-color: blue; */
+      color: white;
+      /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    }
+    .logo {
+      background-color:orangered;
+      font-size: 30px;
+      border-radius: 15px;
+      margin-left: 10px;
+      padding: 5px;
+      font-style: italic;
+    }
+    .logolink {
+      display: block;
+      text-decoration: none;
+      color:white;
+    }
+    /* .brand-title {
+      font-size: 1.5rem;
+      /* margin: 0.5rem; 
+      display:flex;
+    } */
+    
+    .navbar-links {
+      height: 100%;
+    }
+    
+    .navbar-links ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navbar-links li {
+      list-style: none;
+    }
+    
+    .navbar-links li a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      padding: 1rem;
+    }
+    
+    .navbar-links li:hover {
+      background-color: #555;
+    }
+    
+    .toggle-button {
+      position: absolute;
+      top: 0.75rem;
+      right: 1rem;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 21px;
+    }
+    
+    .toggle-button .bar {
+      height: 3px;
+      width: 100%;
+      background-color: white;
+      border-radius: 10px;
+    }
+    
+    /* --NFT cards styling */
+    .cards {
+      display: flex;
+      background-color: #555;
+    }
+    
+    .card {
+      margin: 10px;
+      display: block;
+      width: 400px;
+      height: 300px;
+      box-shadow: 0px 0px 15px -2px black;
+    }
+    
+    .nftimg {
+      object-fit: cover;
+      max-width: 400px;
+      max-height: 300px;
+      /* aspect-ratio:16/12; */
+    }
+    
+    .card:hover {
+      transition: 350ms transform ease-in-out;
+      transform: scale(1.15);
+      border-radius: 15%;
+    }
+    .buy_button {
+      margin-top: 20px;
+      margin-left: 10px;
+      width: 400px;
+      font-weight: bold;
+      color: white;
+      background-color: cornflowerblue;
+    }
+    /* --end cards styling */
+    
+    /* CreateTimeline styling */
+    .createitem {
+      /* text-align: center; */
+      margin-top: 0px;
+      padding-top: 10px;
+      background-color: gray;
+      height: 100vw;
+      display: flex;
+      flex-direction: column;
+    }
+    .tl {
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 500px;
+      margin: 0 auto;
+      border-left: 3px solid silver;
+      padding-left: 25px;
+    }
+    .tl h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 32px;
+      margin: 0;
+      color: blueviolet;
+      border-bottom: 1px solid turquoise;
+    }
+    
+    .event {
+      /* box-shadow: 0px 3px 6px -2px darkgreen; */
+      padding: 32px;
+      margin: 48px 0;
+      line-height: 2;
+      cursor: pointer;
+      position: relative;
+    }
+    .event::before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      border: 2px solid blanchedalmond;
+      position: absolute;
+      left: -39px;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-55%);
+      background-color: white;
+      transition: all 300ms;
+    }
+    .event:hover {
+      /* box-shadow: 1px 6px 16px -1px indianred; */
+      transition: all 1000ms;
+      /* background:red; */
+    }
+    .event:hover::before {
+      background: red;
+    }
+    .event-date {
+      position: absolute;
+      left: -150px;
+      top: 40%;
+      transform: translateY(-0%);
+      font-weight: bold;
+    }
+    
+    /* --end CreateTimeline styling */
+    
+  }
+    /* --end CreateTimeline styling *//* -----------end 2000px media screen--------- */
+  
